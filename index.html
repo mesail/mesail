@@ -14,6 +14,22 @@
             font-family: Arial, sans-serif;
             background: #f5f5f5;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 480px;
+        }
+        .logo {
+            margin-bottom: 2rem;
+        }
+        .message {
+            margin-bottom: 2rem;
+        }
+        .journals {
+            width: 100%;
+        }
         .message {
             font-size: 2rem;
             color: #333;
@@ -21,15 +37,6 @@
             padding: 2rem 3rem;
             border-radius: 12px;
             box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-            margin-bottom: 2rem;
-        }
-        .journals {
-            margin-top: 0;
-            background: #fff;
-            padding: 1.5rem 2rem;
-            border-radius: 10px;
-            box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-            text-align: center;
         }
         .journals h2 {
             font-size: 1.3rem;
@@ -85,28 +92,22 @@
                 max-width: 100%;
             }
         }
-        .logo {
-            display: block;
-            margin: 0 auto 2rem auto;
-            max-width: 320px;
-            width: 90%;
-            height: auto;
-            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.07));
-        }
     </style>
 </head>
 <body>
-    <img src="images/logo.png" alt="Mesail Logo" class="logo" />
-    <div class="message">Yapım Aşamasında</div>
-    <div class="journals">
-        <h2>Sayılarımız</h2>
-        <ul>
-            <li><a href="journals/Mesail sayı 1.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 1</a></li>
-            <li><a href="journals/mesail sayı 3.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 3</a></li>
-            <li><a href="journals/mesail sayı 5.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 5</a></li>
-            <li><a href="journals/mesail sayı 6.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 6</a></li>
-            <li><a href="journals/mesail sayı 7.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 7</a></li>
-        </ul>
+    <div class="container">
+        <img src="images/logo.png" alt="Mesail Logo" class="logo" />
+        <div class="message">Yapım Aşamasında</div>
+        <div class="journals">
+            <h2>Sayılarımız</h2>
+            <ul>
+                <li><a href="journals/Mesail sayı 1.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 1</a></li>
+                <li><a href="journals/mesail sayı 3.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 3</a></li>
+                <li><a href="journals/mesail sayı 5.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 5</a></li>
+                <li><a href="journals/mesail sayı 6.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 6</a></li>
+                <li><a href="journals/mesail sayı 7.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 7</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
