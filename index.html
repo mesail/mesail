@@ -38,31 +38,73 @@
         .journals ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
+            max-width: 350px;
         }
         .journals li {
-            margin: 0.5rem 0;
+            margin: 0.7rem 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: box-shadow 0.2s, background 0.2s;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        }
+        .journals li:hover {
+            background: #e3f2fd;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
         }
         .journals a {
             color: #1976d2;
             text-decoration: none;
             font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            transition: color 0.2s;
         }
-        .journals a:hover {
-            text-decoration: underline;
+        .pdf-icon {
+            margin-right: 0.7em;
+            font-size: 1.3em;
+        }
+        .file-size {
+            color: #888;
+            font-size: 0.95em;
+            margin-left: auto;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+                height: auto;
+            }
+            .message, .journals {
+                padding: 1rem 0.5rem;
+                font-size: 1.1rem;
+            }
+            .journals ul {
+                max-width: 100%;
+            }
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 2rem auto;
+            max-width: 320px;
+            width: 90%;
+            height: auto;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.07));
         }
     </style>
 </head>
 <body>
+    <img src="images/logo.png" alt="Mesail Logo" class="logo" />
     <div class="message">Yapım Aşamasında</div>
     <div class="journals">
         <h2>Sayılarımız</h2>
         <ul>
-            <li><a href="journals/Mesail sayı 1.pdf" target="_blank">Mesail sayı 1</a></li>
-            <li><a href="journals/mesail sayı 3.pdf" target="_blank">mesail sayı 3</a></li>
-            <li><a href="journals/mesail sayı 5.pdf" target="_blank">mesail sayı 5</a></li>
-            <li><a href="journals/mesail sayı 6.pdf" target="_blank">mesail sayı 6</a></li>
-            <li><a href="journals/mesail sayı 7.pdf" target="_blank">mesail sayı 7</a></li>
+            <li><a href="journals/Mesail sayı 1.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 1 <span class="file-size">(3.2 MB)</span></a></li>
+            <li><a href="journals/mesail sayı 3.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 3 <span class="file-size">(0.9 MB)</span></a></li>
+            <li><a href="journals/mesail sayı 5.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 5 <span class="file-size">(6.4 MB)</span></a></li>
+            <li><a href="journals/mesail sayı 6.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 6 <span class="file-size">(15 MB)</span></a></li>
+            <li><a href="journals/mesail sayı 7.pdf" target="_blank"><span class="pdf-icon">📄</span> Mesail sayı 7 <span class="file-size">(1.0 MB)</span></a></li>
         </ul>
     </div>
 </body>
